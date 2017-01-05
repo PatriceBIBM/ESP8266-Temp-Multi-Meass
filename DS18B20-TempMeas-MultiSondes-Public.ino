@@ -1,5 +1,5 @@
  /*
-  Created by Igor Jarc
+  Initialy Created by Igor Jarc
   Updated by P Becquet, for multi probes, and Jeedom use
   
  See http://iot-playground.com for details
@@ -14,6 +14,8 @@
  This program is free software; you can redistribute it and/or
  modify it under the terms of the GNU General Public License
  version 2 as published by the Free Software Foundation.
+ 
+ Fix 01 Sample
  */
 #include <ESP8266WiFi.h>
 #include <OneWire.h>
@@ -21,19 +23,19 @@
 
 //AP definitions
 #define AP_SSID "LaPomme"
-#define AP_PASSWORD "maxence8xokuwvq"
+#define AP_PASSWORD "yourcode"
 #define AP_NAME "floor2"
 
 // EasyIoT server definitions
 #define EIOT_USERNAME    "admin"
 #define EIOT_PASSWORD    "pwd"
-#define EIOT_IP_ADDRESS  "192.168.0.xx"
-#define EIOT_PORT        80
+#define EIOT_IP_ADDRESS  "192.168.0.xx"	// Jeedom Server adress
+#define EIOT_PORT        80				// Jeedom server port
 #define EIOT_NODE        "N13S0"
-#define EIOT_APIKEY      "YourAPIKey"
-#define EIOT_NODE_ID1     "33"
-#define EOIT_NODE_ID2     "47"
-#define MAX_SONDES         2     // To be reUsed in loops.. Must no exceed number of values in sondesArray
+#define EIOT_APIKEY      "YourAPIKey"	// Jeedom API Key. 
+#define EIOT_NODE_ID1     "33"	 		// ID of the Jeedom Object (read when created)
+#define EOIT_NODE_ID2     "47"	 		// as above
+#define MAX_SONDES         2     		// To be reUsed in loops.. Must no exceed number of values in sondesArray
 
 #define REPORT_INTERVAL 60 // in sec
 
