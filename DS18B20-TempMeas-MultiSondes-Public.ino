@@ -21,7 +21,7 @@
 
 //AP definitions
 #define AP_SSID "LaPomme"
-#define AP_PASSWORD "maxence8xokuwvq"
+#define AP_PASSWORD "put your pass"
 #define AP_NAME "floor2"
 
 // EasyIoT server definitions
